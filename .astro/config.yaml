@@ -1,0 +1,6 @@
+postgres:
+  port: "5434"
+project:
+  name: run-airflow-locally
+webserver:
+  port: "8082"
