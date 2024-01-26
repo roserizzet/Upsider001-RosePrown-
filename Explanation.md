@@ -76,12 +76,12 @@ sequenceDiagram
 -----------
   4.  Implementation
      - Data Generation: [Dataset](https://www.kaggle.com/datasets/sid321axn/bondora-peer-to-peer-lending-loan-data) 
-       - Create Python scripts to generate dummy data for users, loans, and transactions.
-       - Use SQL to populate the database with this dummy data.
-     - Airflow Pipelines:(Refer to dags folder[...py])
-       - Define tasks to fetch data from the database.
-       - Transform data as needed for reporting.
-       - Generate and store reports in a dedicated location.
+       - Created Python scripts to generate dummy data for users
+       - Used SQL to populate the database with this dummy data.
+     - Airflow Pipelines:(Refer to dags folder[main.py and report.py])
+       - Defined tasks to fetch and upload data from and to the database.
+       - Data enginnnnering team will collect data from UI and transfer to Database where Data scientists will fetch uploaded data to preporcess and do analysis like risk asessment and create interest rates as needed for reporting.
+       - The updated data by datascientists will be uploaded to database update table and data engineer pipeline will fetch and generate and store reports in a dedicated location(either to UI for  stakehoders view).
 
 -----------
 --------
@@ -110,7 +110,7 @@ down, nearest to half the average guess of the other participants.
     - The **Assumed Middle** is the expected average guess of other participants, often assumed to be around 26.5.
     - The **Mean Deviation** is the participant's strategic decision to position slightly lower than the assumed middle.
     - The formula calculates the participant's guess as half the difference between the assumed middle and the chosen deviation.
-    - strategies can vary, and the success of any strategy is not guaranteed in such scenarios. It's a classic example of game theory and strategic thinking.
+    
 
 ------
 ------
