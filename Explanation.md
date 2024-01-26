@@ -44,7 +44,6 @@ sequenceDiagram
      - Apache Airflow Pipelines:
        - Schedule daily pipelines to fetch and update loan data.
        - Generate reports on loan performance, default rates, and investor returns.
-- _Note: connections involving authentication, risk assessment, SQL operations, and Apache Airflow Pipelines are in straight arrows. Connections involving the backend processes (backend) and reports are in dotted arrows_
 
 
 ```mermaid 
@@ -75,7 +74,6 @@ sequenceDiagram
 ```
 -----------
   4.  Implementation
-     - Data Generation: [Dataset](https://www.kaggle.com/datasets/sid321axn/bondora-peer-to-peer-lending-loan-data) 
        - Created Python scripts to generate dummy data for users
        - Used SQL to populate the database with this dummy data.
      - Airflow Pipelines:(Refer to dags folder[main.py and report.py])
